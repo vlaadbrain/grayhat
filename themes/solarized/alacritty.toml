@@ -1,0 +1,52 @@
+[font]
+size = 16.0
+
+[colors.primary]
+background = '#002b36'
+foreground = '#eee895'
+
+dim_foreground = "#797593"
+bright_foreground = "#575279"
+
+[colors.cursor]
+text = "#555555"
+cursor = "#cccccc"
+
+[colors.vi_mode_cursor]
+text = "#575279"
+cursor = "#cecacd"
+
+[colors.selection]
+text = "#575279"
+background = "#dfdad9"
+
+[colors.normal]
+black   = '#073642'
+red     = '#dc322f'
+green   = '#859900'
+yellow  = '#b58900'
+blue    = '#268bd2'
+magenta = '#d33682'
+cyan    = '#2aa198'
+white   = '#eee8d5'
+
+[colors.bright]
+black   = '#002b36'
+red     = '#cb4b16'
+green   = '#586e75'
+yellow  = '#657b83'
+blue    = '#839496'
+magenta = '#6c71c4'
+cyan    = '#93a1a1'
+white   = '#fdf6e3'
+
+[colors.dim]
+black = "#9893a5"
+red = "#b4637a"
+green = "#286983"
+yellow = "#ea9d34"
+blue = "#56949f"
+magenta = "#907aa9"
+cyan = "#d7827e"
+white = "#575279"
+

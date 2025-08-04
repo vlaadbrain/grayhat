@@ -1,0 +1,10 @@
+@define-color foreground #93a1a1;
+@define-color background #002936;
+
+@define-color normfg #93a1a1;
+@define-color normbg #002936;
+@define-color normbrdr #073650;
+
+@define-color selfg #93a1a1;
+@define-color selbg #073642;
+@define-color selbrdr #cb4b16;
