@@ -1,0 +1,4 @@
+#!/bin/bash
+
+grayhat-refresh-config hypr/hyprsunset.conf
+grayhat-restart-hyprsunset

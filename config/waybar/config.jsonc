@@ -45,8 +45,8 @@
   },
   "custom/update": {
     "format": "",
-    "exec": "~/.local/share/omarchy/bin/omarchy-update-available",
-    "on-click": "alacritty --class Omarchy --title Omarchy -e omarchy-update",
+    "exec": "~/.local/share/grayhat/bin/grayhat-update-available",
+    "on-click": "alacritty --class Grayhat --title Grayhat -e grayhat-update",
     "interval": 3600
   },
   "cpu": {
@@ -58,7 +58,7 @@
     "format": "{:%A %H:%M}",
     "format-alt": "{:%d %B W%V %Y}",
     "tooltip": false,
-    "on-click-right": "~/.local/share/omarchy/bin/omarchy-cmd-tzupdate"
+    "on-click-right": "~/.local/share/grayhat/bin/grayhat-cmd-tzupdate"
   },
   "network": {
     "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],

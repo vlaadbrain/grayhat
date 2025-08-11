@@ -1,0 +1,4 @@
+#!/bin/bash
+
+grayhat-refresh-config walker/config.toml
+grayhat-restart-walker

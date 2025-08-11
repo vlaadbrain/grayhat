@@ -1,2 +1,2 @@
-echo "Copy desktop file for new Omarchy TUI"
-cp ~/.local/share/omarchy/applications/omarchy.desktop ~/.local/share/applications/
+echo "Copy desktop file for new Grayhat TUI"
+cp ~/.local/share/grayhat/applications/grayhat.desktop ~/.local/share/applications/

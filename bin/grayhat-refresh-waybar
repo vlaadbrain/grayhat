@@ -1,0 +1,5 @@
+#!/bin/bash
+
+grayhat-refresh-config waybar/config.jsonc
+grayhat-refresh-config waybar/style.css
+grayhat-restart-waybar

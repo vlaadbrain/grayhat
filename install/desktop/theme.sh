@@ -20,19 +20,19 @@ gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"
 gsettings set org.gnome.desktop.interface icon-theme "Yaru-blue"
 
 # Setup theme links
-mkdir -p ~/.config/omarchy/themes
-for f in ~/.local/share/omarchy/themes/*; do ln -nfs "$f" ~/.config/omarchy/themes/; done
+mkdir -p ~/.config/grayhat/themes
+for f in ~/.local/share/grayhat/themes/*; do ln -nfs "$f" ~/.config/grayhat/themes/; done
 
 # Set initial theme
-mkdir -p ~/.config/omarchy/current
-ln -snf ~/.config/omarchy/themes/tokyo-night ~/.config/omarchy/current/theme
-ln -snf ~/.config/omarchy/current/theme/backgrounds/1-scenery-pink-lakeside-sunset-lake-landscape-scenic-panorama-7680x3215-144.png ~/.config/omarchy/current/background
+mkdir -p ~/.config/grayhat/current
+ln -snf ~/.config/grayhat/themes/tokyo-night ~/.config/grayhat/current/theme
+ln -snf ~/.config/grayhat/current/theme/backgrounds/1-scenery-pink-lakeside-sunset-lake-landscape-scenic-panorama-7680x3215-144.png ~/.config/grayhat/current/background
 
 # Set specific app links for current theme
-ln -snf ~/.config/omarchy/current/theme/neovim.lua ~/.config/nvim/lua/plugins/theme.lua
+ln -snf ~/.config/grayhat/current/theme/neovim.lua ~/.config/nvim/lua/plugins/theme.lua
 
 mkdir -p ~/.config/btop/themes
-ln -snf ~/.config/omarchy/current/theme/btop.theme ~/.config/btop/themes/current.theme
+ln -snf ~/.config/grayhat/current/theme/btop.theme ~/.config/btop/themes/current.theme
 
 mkdir -p ~/.config/mako
-ln -snf ~/.config/omarchy/current/theme/mako.ini ~/.config/mako/config
+ln -snf ~/.config/grayhat/current/theme/mako.ini ~/.config/mako/config

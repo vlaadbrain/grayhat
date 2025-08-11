@@ -1,4 +1,4 @@
-if [[ ! -f ~/.local/state/omarchy/bare.mode ]]; then
+if [[ ! -f ~/.local/state/grayhat/bare.mode ]]; then
   echo "Add missing installation of Zoom"
 
   if ! command -v zoom &>/dev/null; then

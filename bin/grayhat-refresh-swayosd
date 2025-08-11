@@ -1,0 +1,5 @@
+#!/bin/bash
+
+grayhat-refresh-config swayosd/config.toml
+grayhat-refresh-config swayosd/style.css
+grayhat-restart-swayosd

@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=Grayhat
+Description=Grayhat splash screen.
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/grayhat
+ScriptFile=/usr/share/plymouth/themes/grayhat/grayhat.script
+ConsoleLogBackgroundColor=0x1a1b26

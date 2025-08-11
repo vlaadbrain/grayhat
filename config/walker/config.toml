@@ -2,9 +2,9 @@ app_launch_prefix = "uwsm app -- "
 terminal_title_flag = ""
 locale = ""
 close_when_open = true                                             # Toggle on reopen
-theme = "omarchy-default"
+theme = "grayhat-default"
 theme_base = []
-theme_location = ["~/.local/share/omarchy/default/walker/themes/"]
+theme_location = ["~/.local/share/grayhat/default/walker/themes/"]
 monitor = ""
 hotreload_theme = true
 as_window = false
@@ -100,14 +100,14 @@ url = "https://github.com/abenz1267/walker"
 keywords = ["walker", "github"]
 
 [[builtins.bookmarks.entries]]
-label = "Omarchy - Github"
-url = "https://github.com/basecamp/omarchy"
-keywords = ["omarchy", "github"]
+label = "Grayhat - Github"
+url = "https://github.com/basecamp/grayhat"
+keywords = ["grayhat", "github"]
 
 [[builtins.bookmarks.entries]]
-label = "Omarchy Manual"
-url = "https://manuals.omamix.org/2/the-omarchy-manual"
-keywords = ["omarchy"]
+label = "Grayhat Manual"
+url = "https://manuals.omamix.org/2/the-grayhat-manual"
+keywords = ["grayhat"]
 
 [builtins.xdph_picker]
 hidden = true

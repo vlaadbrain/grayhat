@@ -1,9 +1,9 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Omarchy
-Comment=Omarchy TUI
-Exec=alacritty --class=Omarchy --title=Omarchy -e bash -c '$HOME/.local/share/omarchy/bin/omarchy'
+Name=Grayhat
+Comment=Grayhat TUI
+Exec=alacritty --class=Grayhat --title=Grayhat -e bash -c '$HOME/.local/share/grayhat/bin/grayhat'
 Icon=Arch
 Terminal=false
 Categories=System;Utility;

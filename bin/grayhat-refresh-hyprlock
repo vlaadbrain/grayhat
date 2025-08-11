@@ -1,0 +1,4 @@
+#!/bin/bash
+
+grayhat-refresh-config hypr/hyprlock.conf
+

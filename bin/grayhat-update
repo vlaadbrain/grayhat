@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Exit immediately if a command exits with a non-zero status
+set -e
+
+# Show logo
+clear
+cat <~/.local/share/grayhat/logo.txt
+
+# Get the latest while trying to preserve any modifications
+grayhat_path=~/.local/share/grayhat
+git -C $grayhat_path pull --autostash
+git -C $grayhat_path diff --check || git -C $grayhat_path reset --merge
+
+# Run migrations
+"$HOME/.local/share/grayhat/bin/grayhat-migrate"
+
+# Update system packages
+echo -e "\e[32m\nUpdate system packages\e[0m"
+yay -Syu --noconfirm
+
+# Offer to reboot if the kernel has been changed
+if [ "$(uname -r | sed 's/-arch/\.arch/')" != "$(pacman -Q linux | awk '{print $2}')" ]; then
+  gum confirm "Linux kernel has been updated. Reboot?" && sudo reboot now
+fi

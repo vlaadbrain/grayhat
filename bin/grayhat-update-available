@@ -1,0 +1,13 @@
+#!/bin/bash
+
+grayhat_path="$HOME/.local/share/grayhat"
+latest_tag=$(git -C $grayhat_path ls-remote --tags origin | grep -v "{}" | awk '{print $2}' | sed 's#refs/tags/##' | sort -V | tail -n 1)
+current_tag=$(git -C $grayhat_path describe --tags $(git -C $grayhat_path rev-list --tags --max-count=1))
+
+if [[ "$current_tag" != "$latest_tag" ]]; then
+  echo "Grayhat update available ($latest_tag)"
+  exit 0
+else
+  echo "Grayhat is up to date ($current_tag)"
+  exit 1
+fi
