@@ -41,6 +41,7 @@ source $GRAYHAT_INSTALL/config/power.sh
 source $GRAYHAT_INSTALL/config/timezones.sh
 source $GRAYHAT_INSTALL/config/login.sh
 source $GRAYHAT_INSTALL/config/nvidia.sh
+source $GRAYHAT_INSTALL/config/displaylink.sh
 
 # Development
 show_logo decrypt 920
